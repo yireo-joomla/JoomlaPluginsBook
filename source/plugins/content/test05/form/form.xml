@@ -5,6 +5,7 @@
             <field name="test" type="text" 
                 label="PLG_CONTENT_TEST05_FIELD_TEST_LABEL"
                 description="PLG_CONTENT_TEST05_FIELD_TEST_DESC"
+                required="1"
             />
         </fieldset>
     </fields>

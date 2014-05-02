@@ -19,4 +19,15 @@
 		<language tag="en-GB">en-GB.plg_content_test05.ini</language>
 		<language tag="en-GB">en-GB.plg_content_test05.sys.ini</language>
 	</languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field type="category" name="exclude_categories" 
+                    multiple="true" extension="com_content"
+                    label="PLG_CONTENT_TEST05_FIELD_EXCLUDE_CATEGORIES" 
+                />
+            </fieldset>
+        </fields>
+    </config>
 </extension>

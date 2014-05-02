@@ -26,14 +26,45 @@ class plgContentTest05 extends JPlugin
 		{
 			return true;
 		}
-					
+
+        $exclude_categories = $this->params->get('exclude_categories');
+        if (!empty($exclude_categories) && !empty($data->catid) && in_array($data->catid, $exclude_categories))
+        {
+            return true;
+        }
+
 		JForm::addFormPath(__DIR__ . '/form');
 		$form->loadFile('form', false);
 
-        if(!empty($data->id)) {
+        if(!empty($data->id))
+        {
             $data = $this->loadTest($data);
         }
 
+        return true;
+    }
+
+    public function onContentBeforeSave($context, $data, $isNew)
+    {
+        $exclude_categories = $this->params->get('exclude_categories');
+        if (!empty($exclude_categories) && !empty($data->catid) && in_array($data->catid, $exclude_categories))
+        {
+            return true;
+        }
+            
+        $jinput = JFactory::getApplication()->input;
+        $form = $jinput->post->get('jform', null, 'array');
+
+        $test = null;
+        if (is_array($form) && isset($form['test'])) {
+            $test = $form['test'];
+        }
+
+        if (empty($test))
+        { 
+            $data->setError('PLG_CONTENT_TEST05_ERROR_TEST_EMPTY');
+            return false;
+        }
         return true;
     }
 
