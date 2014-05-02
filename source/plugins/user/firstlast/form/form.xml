@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="firstlast">
+		<fieldset name="firstlast"
+			label="PLG_USER_FIRSTLAST_FIELDS"
+		>
+			<field
+				name="firstname"
+				type="text"
+				id="firstname"
+				description="PLG_USER_FIRSTLAST_FIELD_FIRSTNAME_DESC"
+				filter="string"
+				label="PLG_USER_FIRSTLAST_FIELD_FIRSTNAME_LABEL"
+				size="30"
+			/>
+			<field
+				name="lastname"
+				type="text"
+				id="lastname"
+				description="PLG_USER_FIRSTLAST_FIELD_LASTNAME_DESC"
+				filter="string"
+				label="PLG_USER_FIRSTLAST_FIELD_LASTNAME_LABEL"
+				size="30"
+			/>
+		</fieldset>
+	</fields>
+</form>

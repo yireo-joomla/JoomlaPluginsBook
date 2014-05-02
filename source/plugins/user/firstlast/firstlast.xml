@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="system">
+	<name>plg_system_firstlast</name>
+	<author>Jisse Reitsma</author>
+	<creationDate>February 2014</creationDate>
+	<copyright>Copyright (C) 2014. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<authorEmail>jisse@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>3.2.0</version>
+	<description>PLG_SYSTEM_FIRSTLAST_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="firstlast">firstlast.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_firstlast.ini</language>
+		<language tag="en-GB">en-GB.plg_system_firstlast.sys.ini</language>
+	</languages>
+
+</extension>

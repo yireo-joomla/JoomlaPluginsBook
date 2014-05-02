@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields>
+		<fieldset name="basic">
+            <field name="test" type="text" 
+                label="PLG_CONTENT_TEST05_FIELD_TEST_LABEL"
+                description="PLG_CONTENT_TEST05_FIELD_TEST_DESC"
+            />
+        </fieldset>
+    </fields>
+</form>

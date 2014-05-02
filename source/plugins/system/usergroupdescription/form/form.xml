@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields>
+		<fieldset>
+			<field
+				name="description"
+				type="text"
+				id="description"
+				description="PLG_SYSTEM_USERGROUPDESCRIPTION_FIELD_DESCRIPTION_DESC"
+				filter="string"
+				label="PLG_SYSTEM_USERGROUPDESCRIPTION_FIELD_DESCRIPTION_LABEL"
+				size="30"
+			/>
+		</fieldset>
+	</fields>
+</form>
