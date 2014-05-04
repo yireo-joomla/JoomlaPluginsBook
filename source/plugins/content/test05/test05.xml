@@ -23,9 +23,9 @@
     <config>
         <fields name="params">
             <fieldset name="basic">
-                <field type="category" name="exclude_categories" 
+                <field type="category" name="include_categories" 
                     multiple="true" extension="com_content"
-                    label="PLG_CONTENT_TEST05_FIELD_EXCLUDE_CATEGORIES" 
+                    label="PLG_CONTENT_TEST05_FIELD_INCLUDE_CATEGORIES" 
                 />
             </fieldset>
         </fields>

@@ -27,8 +27,24 @@ class plgContentTest05 extends JPlugin
 			return true;
 		}
 
-        $exclude_categories = $this->params->get('exclude_categories');
-        if (!empty($exclude_categories) && !empty($data->catid) && in_array($data->catid, $exclude_categories))
+        $include_categories = $this->params->get('include_categories');
+        if (empty($include_categories))
+        {
+            return true;
+        }
+
+        if (empty($data))
+        {
+            $input = JFactory::getApplication()->input;
+            $data  = (object)$input->post->get('jform', array(), 'array');
+        }
+
+        if (empty($data->catid))
+        {
+            return true;
+        }
+
+        if (!in_array($data->catid, $include_categories))
         {
             return true;
         }
@@ -46,8 +62,13 @@ class plgContentTest05 extends JPlugin
 
     public function onContentBeforeSave($context, $data, $isNew)
     {
-        $exclude_categories = $this->params->get('exclude_categories');
-        if (!empty($exclude_categories) && !empty($data->catid) && in_array($data->catid, $exclude_categories))
+        $include_categories = $this->params->get('include_categories');
+        if (empty($include_categories)) 
+        {
+            return true;
+        }
+
+        if (!in_array($data->catid, $include_categories))
         {
             return true;
         }
@@ -65,6 +86,7 @@ class plgContentTest05 extends JPlugin
             $data->setError('PLG_CONTENT_TEST05_ERROR_TEST_EMPTY');
             return false;
         }
+
         return true;
     }
 
