@@ -36,8 +36,11 @@ class plgContentTest05 extends JPlugin
         if (empty($data))
         {
             $input = JFactory::getApplication()->input;
-            $data  = (object)$input->post->get('jform', array(), 'array');
+            $data  = $input->post->get('jform', array(), 'array');
         }
+
+        jimport('joomla.utilities.arrayhelper');
+        $data = JArrayHelper::toObject($data);
 
         if (empty($data->catid))
         {
@@ -62,6 +65,11 @@ class plgContentTest05 extends JPlugin
 
     public function onContentBeforeSave($context, $data, $isNew)
     {
+		if (!in_array($context, array('com_content.article')))
+		{
+			return true;
+		}
+
         $include_categories = $this->params->get('include_categories');
         if (empty($include_categories)) 
         {
@@ -73,8 +81,8 @@ class plgContentTest05 extends JPlugin
             return true;
         }
             
-        $jinput = JFactory::getApplication()->input;
-        $form = $jinput->post->get('jform', null, 'array');
+        $input = JFactory::getApplication()->input;
+        $form = $input->post->get('jform', null, 'array');
 
         $test = null;
         if (is_array($form) && isset($form['test'])) {
