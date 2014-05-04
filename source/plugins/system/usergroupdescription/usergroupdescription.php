@@ -6,6 +6,8 @@
  * @copyright Copyright 2014 Jisse Reitsma
  * @license GNU Public License version 3 or later
  * @link http://www.yireo.com/books/
+ * 
+ * Adds an usergroup description [book chapter 08]
  */
 
 defined('_JEXEC') or die;
