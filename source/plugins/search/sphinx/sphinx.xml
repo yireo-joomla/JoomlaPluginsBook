@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="search">
+	<name>plg_search_sphinx</name>
+	<creationDate>May 2014</creationDate>
+	<version>3.0.0</version>
+	<description>PLG_SEARCH_SPHINX_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="sphinx">sphinx.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_search_sphinx.ini</language>
+		<language tag="en-GB">en-GB.plg_search_sphinx.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="host" type="text" size="20" default="localhost"
+					description="PLG_SEARCH_SPHINX_FIELD_HOST_DESC"
+					label="PLG_SEARCH_SPHINX_FIELD_HOST"
+				/>
+				<field name="port" type="text" size="20" default="9312"
+					description="PLG_SEARCH_SPHINX_FIELD_PORT_DESC"
+					label="PLG_SEARCH_SPHINX_FIELD_PORT"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
