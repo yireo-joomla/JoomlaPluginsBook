@@ -45,11 +45,28 @@ class PlgSearchSphinx extends JPlugin
     {
         $host = $this->params->get('host', 'localhost');
         $port = $this->params->get('port', 9312);
+        $index = $this->params->get('index');
+
+        switch($phrase)
+        {
+            case 'exact':
+                $matchMode = SPH_MATCH_PHRASE;
+                break;
+            
+            case 'all':
+                $matchMode = SPH_MATCH_ALL;
+                break;
+            
+            case 'any':
+            default:
+                $matchMode = SPH_MATCH_ANY;
+                break;
+        }
+
         $s = new SphinxClient();
         $s->setServer($host, $port);
-        $s->setMatchMode(SPH_MATCH_ANY);
-        $s->setMaxQueryTime(20);
-        $result = $s->query($text);
+        $s->setMatchMode($matchMode);
+        $result = $s->query($text, $index);
         return $result;
     }
 
