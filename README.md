@@ -23,4 +23,7 @@ All code samples are released under the GNU General Public License (GPL).
 Support
 =======
 There is no support given on the functionality of the plugins, except for questions that concern the
-book as well. Questions regarding the code samples can be sent to: jisse@yireo.com
+book as well. The plugins are not ment to work for end-users, they are written to help developers write
+their own plugins.
+
+Questions regarding the code samples can be sent to: jisse@yireo.com
