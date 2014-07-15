@@ -67,13 +67,8 @@ class plgAuthenticationTest07 extends JPlugin
         }
 
         $data = json_decode($result, true);
-        print_r($data);
-        exit;
         if (!empty($result['errors'])) {
             return false;
         }
-
-        print_r($data);
-        exit;
     }
 }

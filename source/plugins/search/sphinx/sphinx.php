@@ -66,6 +66,7 @@ class PlgSearchSphinx extends JPlugin
         $s = new SphinxClient();
         $s->setServer($host, $port);
         $s->setMatchMode($matchMode);
+        $s->setLimits(50);
         $result = $s->query($text, $index);
         return $result;
     }

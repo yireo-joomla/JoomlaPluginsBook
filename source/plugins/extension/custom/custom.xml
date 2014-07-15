@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="extension">
+	<name>plg_extension_custom</name>
+	<author>Jisse Reitsma</author>
+	<creationDate>February 2014</creationDate>
+	<copyright>Copyright (C) 2014. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<authorEmail>jisse@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>3.2.0</version>
+	<description>PLG_SYSTEM_TEST05_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="custom">custom.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_extension_custom.ini</language>
+		<language tag="en-GB">en-GB.plg_extension_custom.sys.ini</language>
+	</languages>
+</extension>

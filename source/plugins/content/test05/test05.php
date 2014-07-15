@@ -39,8 +39,11 @@ class plgContentTest05 extends JPlugin
             $data  = $input->post->get('jform', array(), 'array');
         }
 
-        jimport('joomla.utilities.arrayhelper');
-        $data = JArrayHelper::toObject($data);
+        if (is_array($data)) 
+        {
+            jimport('joomla.utilities.arrayhelper');
+            $data = JArrayHelper::toObject($data);
+        }
 
         if (empty($data->catid))
         {
@@ -54,6 +57,9 @@ class plgContentTest05 extends JPlugin
 
 		JForm::addFormPath(__DIR__ . '/form');
 		$form->loadFile('form', false);
+
+        $form->removeField('metakey');
+		$form->loadFile('override', false);
 
         if(!empty($data->id))
         {

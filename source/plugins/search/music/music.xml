@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.2" type="plugin" group="system">
-	<name>plg_system_music</name>
+<extension version="3.2" type="plugin" group="search">
+	<name>plg_search_music</name>
 	<author>Jisse Reitsma</author>
 	<creationDate>May 2014</creationDate>
 	<copyright>Copyright (C) 2014. All rights reserved.</copyright>
@@ -8,7 +8,7 @@
 	<authorEmail>jisse@yireo.com</authorEmail>
 	<authorUrl>www.yireo.com</authorUrl>
 	<version>1.0.0</version>
-	<description>PLG_SYSTEM_MUSIC_XML_DESCRIPTION</description>
+	<description>PLG_SEARCH_MUSIC_XML_DESCRIPTION</description>
 
 	<files>
 		<filename plugin="music">music.php</filename>
@@ -16,15 +16,7 @@
 	</files>
 
 	<languages>
-		<language tag="en-GB">en-GB.plg_system_music.ini</language>
-		<language tag="en-GB">en-GB.plg_system_music.sys.ini</language>
+		<language tag="en-GB">en-GB.plg_search_music.ini</language>
+		<language tag="en-GB">en-GB.plg_search_music.sys.ini</language>
 	</languages>
-
-	<config>
-	    <fields name="params">
-		    <fieldset name="basic">
-		        <field name="test" type="email" />
-            </fieldset>
-        </fields>
-    </config>
 </extension>

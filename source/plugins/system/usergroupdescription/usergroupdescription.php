@@ -6,8 +6,6 @@
  * @copyright Copyright 2014 Jisse Reitsma
  * @license GNU Public License version 3 or later
  * @link http://www.yireo.com/books/
- * 
- * Adds an usergroup description [book chapter 08]
  */
 
 defined('_JEXEC') or die;
@@ -95,7 +93,6 @@ class plgSystemUsergroupdescription extends JPlugin
 
 	public function onUserAfterSaveGroup($context, $data, $isNew)
 	{
-            print_r($data);exit;
 		$usergroupId = JArrayHelper::getValue($data, 'id', 0, 'int');
 
 		if ($usergroupId && $result && isset($data->usergroupdescription) && (count($data->usergroupdescription)))
