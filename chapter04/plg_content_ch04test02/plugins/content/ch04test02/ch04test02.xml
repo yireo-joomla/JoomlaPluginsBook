@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="content">
+	<name>plg_content_ch04test02</name>
+	<author>Jisse Reitsma</author>
+	<creationDate>August 2014</creationDate>
+	<copyright>Copyright (C) 2014. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<authorEmail>jisse@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>0.0.1</version>
+	<description>PLG_CONTENT_CH04TEST02_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="ch04test02">ch04test02.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_ch04test02.ini</language>
+		<language tag="en-GB">en-GB.plg_content_ch04test02.sys.ini</language>
+	</languages>
+
+    <config>
+        <fields>
+            <fieldset name="basic" addfieldpath="plugins/content/ch05test02/fields">
+
+                <field 
+                    name="test1" 
+                    type="testselect1" 
+                    label="PLG_CONTENT_CH04TEST02_FIELD_TEST1_LABEL" 
+                    description="PLG_CONTENT_CH04TEST02_FIELD_TEST1_DESC"
+                />
+
+                <field 
+                    name="test2" 
+                    type="testselect2" 
+                    multiple="1"
+                    size="10"
+                    label="PLG_CONTENT_CH04TEST02_FIELD_TEST2_LABEL" 
+                    description="PLG_CONTENT_CH04TEST02_FIELD_TEST2_DESC"
+                />
+          </fieldset>
+      </fields>
+   </config>
+
+</extension>

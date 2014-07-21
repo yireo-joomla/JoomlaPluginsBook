@@ -1,0 +1,21 @@
+<?xml version="1.0" ?> 
+<updates> 
+    <update> 
+        <name>Chapter 03 / Test 01</name> 
+        <description>Content - Chapter 03 / Test 01 plugin</description> 
+        <element>ch03test01</element> 
+        <type>plugin</type> 
+        <folder>content</folder> 
+        <version>0.0.1</version> 
+        <infourl title="URL">http://example.com/plg_content_ch03test01</infourl> 
+        <downloads> 
+            <downloadurl type="full" format="zip">http://example.com/plg_content_ch03test01.zip</downloadurl> 
+        </downloads> 
+        <maintainer>Yireo</maintainer> 
+        <maintainerurl>http://www.yireo.com</maintainerurl> 
+        <tags> 
+            <tag>ch03test01</tag> 
+        </tags> 
+        <targetplatform name="joomla" version="3.[0123456789]" />
+    </update> 
+</updates>

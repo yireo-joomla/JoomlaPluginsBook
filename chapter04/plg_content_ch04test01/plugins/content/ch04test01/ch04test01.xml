@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="content">
+	<name>plg_content_ch04test01</name>
+	<author>Jisse Reitsma</author>
+	<creationDate>August 2014</creationDate>
+	<copyright>Copyright (C) 2014. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<authorEmail>jisse@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>0.0.1</version>
+	<description>PLG_CONTENT_CH04TEST01_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="ch04test01">ch04test01.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_ch04test01.ini</language>
+		<language tag="en-GB">en-GB.plg_content_ch04test01.sys.ini</language>
+	</languages>
+
+    <config>
+        <fields>
+            <fieldset name="basic">
+
+                <field 
+                    name="label" 
+                    type="text" 
+                    label="PLG_CONTENT_CH04TEST01_FIELD_LABEL_LABEL" 
+                    description="PLG_CONTENT_CH04TEST01_FIELD_LABEL_DESC"
+                />
+
+                <field 
+                    name="description" 
+                    type="textarea" 
+                    label="PLG_CONTENT_CH04TEST01_FIELD_DESCRIPTION_LABEL" 
+                    description="PLG_CONTENT_CH04TEST01_FIELD_DESCRIPTION_DESC"
+                />
+
+                <field
+                    name="align"
+                    type="list"
+                    default="left"
+                    label="PLG_CONTENT_CH04TEST01_FIELD_ALIGN_LABEL"
+                    description="PLG_CONTENT_CH04TEST01_FIELD_ALIGN_DESC"
+                >
+                    <option value="left">PLG_CONTENT_CH04TEST01_FIELD_ALIGN_OPTION_LEFT</option> 
+                    <option value="right">PLG_CONTENT_CH04TEST01_FIELD_ALIGN_OPTION_RIGHT</option> 
+                    <option value="center">PLG_CONTENT_CH04TEST01_FIELD_ALIGN_OPTION_CENTER</option> 
+                </field> 
+            </fieldset>
+
+            <fieldset 
+                name="content" 
+                label="PLG_CONTENT_CH04TEST01_FIELDSET_COLOR_LABEL"
+                >
+                <field  
+                    name="category_id"
+                    type="category" 
+                    extension="com_content" 
+                    label="PLG_CONTENT_CH04TEST01_FIELD_CATEGORY_ID_LABEL" 
+                    description="PLG_CONTENT_CH04TEST01_FIELD_CATEGORY_ID_DESC" 
+                />
+
+                <field
+                    name="date_from" 
+                    type="calendar"     
+                    default=""
+                    label="PLG_CONTENT_CH04TEST01_FIELD_DATE_FROM_LABEL"
+                    description="PLG_CONTENT_CH04TEST01_FIELD_DATE_FROM_DESC"
+                    format="%d-%m-%Y"
+                />
+
+                <field
+                    name="date_to" 
+                    type="calendar"     
+                    default=""
+                    label="PLG_CONTENT_CH04TEST01_FIELD_DATE_TO_LABEL"
+                    description="PLG_CONTENT_CH04TEST01_FIELD_DATE_TO_DESC"
+                    format="%d-%m-%Y"
+                />
+
+                <field
+                    name="access"
+                    type="accesslevel"
+                    label="JFIELD_ACCESS_LABEL"
+                    description="JFIELD_ACCESS_DESC"
+                    class="span12 small"
+                />
+
+            </fieldset>
+
+            <fieldset name="color" label="PLG_CONTENT_CH04TEST01_FIELDSET_COLOR_LABEL">
+
+                <field
+                    name="apply_color"
+                    type="list"
+                    default="1"
+                    label="PLG_CONTENT_CH04TEST01_FIELD_APPLYCOLOR_LABEL"
+                    description="PLG_CONTENT_CH04TEST01_FIELD_APPLYCOLOR_DESC"
+                >
+                    <option value="0">JNO</option> 
+                    <option value="1">JYES</option> 
+                </field> 
+
+                <field 
+                    name="color" 
+                    type="color" 
+                    default="#ffffff"  
+                    label="PLG_CONTENT_CH04TEST01_FIELD_COLOR_LABEL" 
+                    description="PLG_CONTENT_CH04TEST01_FIELD_COLOR_DESC"
+                />
+
+                <field 
+                    name="palette" 
+                    type="sql" 
+                    default="" 
+                    label="PLG_CONTENT_CH04TEST01_FIELD_PALETTE_LABEL"
+                    description="PLG_CONTENT_CH04TEST01_FIELD_PALETTE_DESC"
+                    query="SELECT id AS value, title FROM #__palettes"
+                />
+
+          </fieldset>
+      </fields>
+   </config>
+
+</extension>
