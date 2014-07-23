@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="system">
+	<name>plg_system_customscripts</name>
+	<author>Jisse Reitsma</author>
+	<creationDate>August 2014</creationDate>
+	<copyright>Copyright (C) 2014. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<authorEmail>jisse@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>0.0.1</version>
+	<description>PLG_SYSTEM_CUSTOMSCRIPTS_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="customscripts">customscripts.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_customscripts.ini</language>
+		<language tag="en-GB">en-GB.plg_system_customscripts.sys.ini</language>
+	</languages>
+</extension>
