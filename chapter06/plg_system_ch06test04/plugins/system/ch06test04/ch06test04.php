@@ -9,6 +9,7 @@
  */
     
 // @todo: Does this actually work?
+// @todo: Implement the onAfterRender() method as well to replace all numbers?
 
 defined('_JEXEC') or die;
 
