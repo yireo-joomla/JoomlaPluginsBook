@@ -15,18 +15,21 @@ class plgExtensionCustom extends JPlugin
 {
     public function onExtensionBeforeSave($context, $table, $isNew)
     {
-        $this->debug('context', $context);
-        $this->debug('table', get_class($table));
+        $this->debug('[onExtensionBeforeSave] context', $context);
+        $this->debug('[onExtensionBeforeSave] table', get_class($table));
     }
 
     public function onExtensionAfterSave($context, $table, $isNew)
     {
+        $this->debug('[onExtensionAfterSave] context', $context);
+        $this->debug('[onExtensionAfterSave] table', get_class($table));
     }
 
-    protected function debug($message, $variable = null)
+    protected function debug($message, $variable)
     {
         if (!empty($variable)) $message .= var_export($variable, true);
         $message .= "\n";
-        file_put_contents('/tmp/jisse', $message, FILE_APPEND);
+
+        JLog::add($message, JLog::NOTICE, 'plg_extension_custom');
     }
 }
