@@ -1,6 +1,6 @@
 <?php
 /**
- * User Plugin for Joomla! - First Last name
+ * User Plugin for Joomla! - Chapter 08 Test 01
  *
  * @author Jisse Reitsma (jisse@yireo.com)
  * @copyright Copyright 2014 Jisse Reitsma
@@ -11,7 +11,7 @@
 defined('_JEXEC') or die;
 
 jimport('joomla.plugin.plugin');
-class plgUserTestuser1 extends JPlugin
+class plgUserCh08test01 extends JPlugin
 {
 	protected $autoloadLanguage = true;
 
