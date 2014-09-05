@@ -1,6 +1,6 @@
 <?php
 /**
- * Content Plugin for Joomla! - Chapter 05 / Test 01
+ * Content Plugin for Joomla! - Chapter 05 / Test 02
  *
  * @author Jisse Reitsma (jisse@yireo.com)
  * @copyright Copyright 2014 Jisse Reitsma
@@ -11,7 +11,7 @@
 defined('_JEXEC') or die;
 
 jimport('joomla.plugin.plugin');
-class plgContentCh05test01 extends JPlugin
+class plgContentCh05test02 extends JPlugin
 {
     public function __construct(& $subject, $config) 
     { 
