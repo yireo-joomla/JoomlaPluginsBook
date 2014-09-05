@@ -32,8 +32,6 @@ class PlgContentCh03test01 extends JPlugin
 	 *
 	 * @param   object  &$subject  The object to observe.
 	 * @param   array   $config    An optional associative array of configuration settings.
-	 *
-	 * @since   1.5
 	 */
 	public function __construct(&$subject, $config)
 	{
