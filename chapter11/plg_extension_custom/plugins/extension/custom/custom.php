@@ -2,34 +2,70 @@
 /**
  * Extension Plugin for Joomla! - Custom
  *
- * @author Jisse Reitsma (jisse@yireo.com)
- * @copyright Copyright 2014 Jisse Reitsma
- * @license GNU Public License version 3 or later
- * @link http://www.yireo.com/books/
+ * @author     Jisse Reitsma <jisse@yireo.com>
+ * @copyright  Copyright 2014 Jisse Reitsma
+ * @license    GNU Public License version 3 or later
+ * @link       http://www.yireo.com/books/
  */
 
 defined('_JEXEC') or die;
 
 jimport('joomla.plugin.plugin');
-class plgExtensionCustom extends JPlugin
+
+/**
+ * Class PlgExtensionCustom
+ *
+ * @since  September 2014
+ */
+class PlgExtensionCustom extends JPlugin
 {
-    public function onExtensionBeforeSave($context, $table, $isNew)
-    {
-        $this->debug('[onExtensionBeforeSave] context', $context);
-        $this->debug('[onExtensionBeforeSave] table', get_class($table));
-    }
+	/**
+	 * Event method onExtensionBeforeSave
+	 *
+	 * @param   string  $context  Current context
+	 * @param   JTable  $table    JTable instance
+	 * @param   bool    $isNew    Flag to determine whether this is a new extension
+	 *
+	 * @return void
+	 */
+	public function onExtensionBeforeSave($context, $table, $isNew)
+	{
+		$this->debug('[onExtensionBeforeSave] context', $context);
+		$this->debug('[onExtensionBeforeSave] table', get_class($table));
+	}
 
-    public function onExtensionAfterSave($context, $table, $isNew)
-    {
-        $this->debug('[onExtensionAfterSave] context', $context);
-        $this->debug('[onExtensionAfterSave] table', get_class($table));
-    }
+	/**
+	 * Event method onExtensionAfterSave
+	 *
+	 * @param   string  $context  Current context
+	 * @param   JTable  $table    JTable instance
+	 * @param   bool    $isNew    Flag to determine whether this is a new extension
+	 *
+	 * @return void
+	 */
+	public function onExtensionAfterSave($context, $table, $isNew)
+	{
+		$this->debug('[onExtensionAfterSave] context', $context);
+		$this->debug('[onExtensionAfterSave] table', get_class($table));
+	}
 
-    protected function debug($message, $variable)
-    {
-        if (!empty($variable)) $message .= var_export($variable, true);
-        $message .= "\n";
+	/**
+	 * Method to log something
+	 *
+	 * @param   string  $message   Message to log
+	 * @param   mixed   $variable  Optional variable to add to the message
+	 *
+	 * @return void
+	 */
+	protected function debug($message, $variable = null)
+	{
+		if (!empty($variable))
+		{
+			$message .= var_export($variable, true);
+		}
 
-        JLog::add($message, JLog::NOTICE, 'plg_extension_custom');
-    }
+		$message .= "\n";
+
+		JLog::add($message, JLog::NOTICE, 'plg_extension_custom');
+	}
 }
