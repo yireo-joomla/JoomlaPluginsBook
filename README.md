@@ -14,7 +14,7 @@ of the plugins discussed in that chapter. The layout of such a source tree might
     administrator/language/en-GB/en-GB.plg_system_example.sys.ini
 
 The samples can be installed in Joomla! by copying all relevant files to a Joomla! site
-and using the "Discover" feauture of the Joomla! Extension Manager to install things.
+and using the "Discover" feature of the Joomla! Extension Manager to install things.
 
 License
 =======
@@ -23,7 +23,7 @@ All code samples are released under the GNU General Public License (GPL).
 Support
 =======
 There is no support given on the functionality of the plugins, except for questions that concern the
-book as well. The plugins are not ment to work for end-users, they are written to help developers write
+book as well. The plugins are not meant to work for end-users, they are written to help developers write
 their own plugins.
 
 Questions regarding the code samples can be sent to: jisse@yireo.com

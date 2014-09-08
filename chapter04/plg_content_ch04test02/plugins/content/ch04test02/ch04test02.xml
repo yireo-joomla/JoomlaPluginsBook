@@ -22,7 +22,7 @@
 
     <config>
         <fields>
-            <fieldset name="basic" addfieldpath="plugins/content/ch05test02/fields">
+            <fieldset name="basic" addfieldpath="plugins/content/ch04test02/fields">
 
                 <field 
                     name="test1" 
