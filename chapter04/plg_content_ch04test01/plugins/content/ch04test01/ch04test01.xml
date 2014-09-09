@@ -21,7 +21,7 @@
 	</languages>
 
     <config>
-        <fields>
+        <fields name="params">
             <fieldset name="basic">
 
                 <field 
@@ -53,7 +53,6 @@
 
             <fieldset 
                 name="content" 
-                label="PLG_CONTENT_CH04TEST01_FIELDSET_COLOR_LABEL"
                 >
                 <field  
                     name="category_id"
@@ -69,15 +68,6 @@
                     default=""
                     label="PLG_CONTENT_CH04TEST01_FIELD_DATE_FROM_LABEL"
                     description="PLG_CONTENT_CH04TEST01_FIELD_DATE_FROM_DESC"
-                    format="%d-%m-%Y"
-                />
-
-                <field
-                    name="date_to" 
-                    type="calendar"     
-                    default=""
-                    label="PLG_CONTENT_CH04TEST01_FIELD_DATE_TO_LABEL"
-                    description="PLG_CONTENT_CH04TEST01_FIELD_DATE_TO_DESC"
                     format="%d-%m-%Y"
                 />
 
@@ -112,6 +102,7 @@
                     description="PLG_CONTENT_CH04TEST01_FIELD_COLOR_DESC"
                 />
 
+                <!--
                 <field 
                     name="palette" 
                     type="sql" 
@@ -120,6 +111,7 @@
                     description="PLG_CONTENT_CH04TEST01_FIELD_PALETTE_DESC"
                     query="SELECT id AS value, title FROM #__palettes"
                 />
+                -->
 
           </fieldset>
       </fields>

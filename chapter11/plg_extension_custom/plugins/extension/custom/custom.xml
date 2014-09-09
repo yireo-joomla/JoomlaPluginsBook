@@ -8,7 +8,7 @@
 	<authorEmail>jisse@yireo.com</authorEmail>
 	<authorUrl>www.yireo.com</authorUrl>
 	<version>3.2.0</version>
-	<description>PLG_SYSTEM_TEST05_XML_DESCRIPTION</description>
+	<description>PLG_EXTENSION_CUSTOM_XML_DESCRIPTION</description>
 
 	<files>
 		<filename plugin="custom">custom.php</filename>
