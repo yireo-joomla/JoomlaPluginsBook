@@ -24,23 +24,27 @@ class JFormFieldTestselect2 extends JFormField
 	/**
 	 * Method to get the input field for this class.
 	 *
-	 * @return  string
+	 * @return	string
 	 */
 	protected function getInput()
 	{
 		$db = JFactory::getDbo();
-		$version = new JVersion();
+		$version = new JVersion;
 
 		$query = $db->getQuery(true);
 		$query->select(array('w.url', 'w.title'));
 		$query->from('#__weblinks AS w');
 		$query->where('w.approved = 1');
- 		if (floatval($version->RELEASE) <= '2.5')
- 		{
- 			$query->where('w.approved = 1');
- 		} else {
- 			$query->where('w.state = 1');
- 		}
+
+		if (floatval($version->RELEASE) <= '2.5')
+		{
+			$query->where('w.approved = 1');
+		}
+		else
+		{
+			$query->where('w.state = 1');
+		}
+
 		$query->order('w.title');
 		$db->setQuery($query);
 

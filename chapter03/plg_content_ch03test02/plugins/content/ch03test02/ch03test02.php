@@ -13,10 +13,10 @@ defined('_JEXEC') or die;
 jimport('joomla.plugin.plugin');
 
 /**
- * Class plgContentCh03test01
+ * Class PlgContentCh03test01
  *
  * @since  September 2014
  */
-class plgContentCh03test02 extends JPlugin
+class PlgContentCh03test02 extends JPlugin
 {
 }

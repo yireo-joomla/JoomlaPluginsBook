@@ -61,7 +61,7 @@ class PlgContentCh05test01 extends JPlugin
 	 * @param   object   $item     A JTableContent object
 	 * @param   boolean  $isNew    If the content is just about to be created
 	 *
-	 * @return  boolean  Return value
+	 * @return	boolean  Return value
 	 */
 	public function onContentAfterSave($context, $item, $isNew)
 	{
@@ -108,7 +108,7 @@ class PlgContentCh05test01 extends JPlugin
 	 * @param   mixed   &$params  The article params
 	 * @param   int     $page     Current page
 	 *
-	 * @return  null
+	 * @return	null
 	 */
 	public function onContentBeforeDisplay($context, &$item, &$params, $page = 0)
 	{
@@ -130,7 +130,7 @@ class PlgContentCh05test01 extends JPlugin
 	 * @param   string  $context     The context for the content passed to the plugin.
 	 * @param   mixed   $test        Test value
 	 *
-	 * @return  bool
+	 * @return	bool
 	 */
 	protected function saveTest($content_id, $context, $test)
 	{
