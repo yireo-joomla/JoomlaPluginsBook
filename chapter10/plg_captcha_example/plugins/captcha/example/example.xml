@@ -2,13 +2,13 @@
 <extension version="3.2" type="plugin" group="captcha">
 	<name>plg_captcha_example</name>
 	<author>Jisse Reitsma</author>
-	<creationDate>June 2014</creationDate>
+	<creationDate>September 2014</creationDate>
 	<copyright>Copyright (C) 2014. All rights reserved.</copyright>
 	<license>GNU General Public License version 3 or later</license>
 	<authorEmail>jisse@yireo.com</authorEmail>
 	<authorUrl>www.yireo.com</authorUrl>
 	<version>0.0.1</version>
-	<description>PLG_AUTHENTICATION_EXAMPLE_XML_DESCRIPTION</description>
+	<description>PLG_CAPTCHA_EXAMPLE_XML_DESCRIPTION</description>
 
 	<files>
 		<filename plugin="example">example.php</filename>

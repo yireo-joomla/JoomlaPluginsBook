@@ -1,2 +1,1 @@
-; Uninstall queries
-DELETE TABLE IF EXISTS `#__test`;
+DROP TABLE IF EXISTS `#__test`;

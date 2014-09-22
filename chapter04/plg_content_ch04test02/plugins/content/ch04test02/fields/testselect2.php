@@ -34,7 +34,6 @@ class JFormFieldTestselect2 extends JFormField
 		$query = $db->getQuery(true);
 		$query->select(array('w.url', 'w.title'));
 		$query->from('#__weblinks AS w');
-		$query->where('w.approved = 1');
 
 		if (floatval($version->RELEASE) <= '2.5')
 		{

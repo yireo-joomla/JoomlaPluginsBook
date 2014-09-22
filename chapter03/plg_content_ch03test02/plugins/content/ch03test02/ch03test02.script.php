@@ -24,7 +24,7 @@ class PlgContentCh03test02InstallerScript
 	 *
 	 * @return bool
 	 */
-	public function install(JAdapterInstance $adapter)
+	public function install($adapter)
 	{
 		return true;
 	}
@@ -36,7 +36,7 @@ class PlgContentCh03test02InstallerScript
 	 *
 	 * @return bool
 	 */
-	public function update(JAdapterInstance $adapter)
+	public function update($adapter)
 	{
 		return true;
 	}
@@ -48,7 +48,7 @@ class PlgContentCh03test02InstallerScript
 	 *
 	 * @return bool
 	 */
-	public function uninstall(JAdapterInstance $adapter)
+	public function uninstall($adapter)
 	{
 		return true;
 	}
@@ -61,8 +61,13 @@ class PlgContentCh03test02InstallerScript
 	 *
 	 * @return bool
 	 */
-	public function preflight(string $route, JAdapterInstance $adapter)
+	public function preflight($route, $adapter)
 	{
+        if ($route != 'install')
+        {
+            return true;
+        }
+
 		$file = JPATH_SITE . '/plugins/content/test01/test01.php';
 
 		if (file_exists($file) == true)
@@ -83,7 +88,7 @@ class PlgContentCh03test02InstallerScript
 	 *
 	 * @return bool
 	 */
-	public function postflight(string $route, JAdapterInstance $adapter)
+	public function postflight($route, $adapter)
 	{
 		return true;
 	}

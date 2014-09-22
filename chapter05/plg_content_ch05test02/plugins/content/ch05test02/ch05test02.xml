@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.4" type="plugin" group="content">
-	<name>plg_content_ch05test01</name>
+	<name>plg_content_ch05test02</name>
 	<author>Jisse Reitsma</author>
 	<creationDate>August 2014</creationDate>
 	<copyright>Copyright (C) 2014. All rights reserved.</copyright>
@@ -8,16 +8,16 @@
 	<authorEmail>jisse@yireo.com</authorEmail>
 	<authorUrl>www.yireo.com</authorUrl>
 	<version>0.0.1</version>
-	<description>PLG_CONTENT_CH05TEST01_XML_DESCRIPTION</description>
+	<description>PLG_CONTENT_CH05TEST02_XML_DESCRIPTION</description>
 
 	<files>
-		<filename plugin="ch05test01">ch05test01.php</filename>
+		<filename plugin="ch05test02">ch05test02.php</filename>
 		<filename>index.html</filename>
 	</files>
 
 	<languages>
-		<language tag="en-GB">en-GB.plg_content_ch05test01.ini</language>
-		<language tag="en-GB">en-GB.plg_content_ch05test01.sys.ini</language>
+		<language tag="en-GB">en-GB.plg_content_ch05test02.ini</language>
+		<language tag="en-GB">en-GB.plg_content_ch05test02.sys.ini</language>
 	</languages>
 
     <install> 

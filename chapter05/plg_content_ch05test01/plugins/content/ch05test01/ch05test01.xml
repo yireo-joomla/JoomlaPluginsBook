@@ -13,6 +13,8 @@
 	<files>
 		<filename plugin="ch05test01">ch05test01.php</filename>
 		<filename>index.html</filename>
+		<folder>form</folder>
+		<folder>sql</folder>
 	</files>
 
 	<languages>

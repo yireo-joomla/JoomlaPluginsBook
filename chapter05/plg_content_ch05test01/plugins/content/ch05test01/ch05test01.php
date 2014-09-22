@@ -20,6 +20,19 @@ jimport('joomla.plugin.plugin');
 class PlgContentCh05test01 extends JPlugin
 {
 	/**
+	 * Constructor
+	 *
+	 * @param   object  &$subject  Instance of JEventDispatcher
+	 * @param   array   $config    Configuration
+	 */
+	public function __construct(& $subject, $config)
+	{
+		parent::__construct($subject, $config);
+
+		$this->loadLanguage();
+	}
+
+	/**
 	 * Event method that runs on content preparation
 	 *
 	 * @param   JForm    $form  The form object
