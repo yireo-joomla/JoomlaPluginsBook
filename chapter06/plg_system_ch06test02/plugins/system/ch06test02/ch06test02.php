@@ -45,7 +45,7 @@ class PlgSystemCh06test02 extends JPlugin
 		$ip = $_SERVER['REMOTE_ADDR'];
 		$referer = $_SERVER['HTTP_REFERER'];
 
-		$db = JFactory::getDBO();
+		$db = JFactory::getDbo();
 		$query = $db->getQuery(true);
 		$query->insert($db->quoteName('#__affiliate_requests'))
 			->set($db->quoteName('affiliate_id') . '=' . $affiliate_id)
@@ -53,5 +53,34 @@ class PlgSystemCh06test02 extends JPlugin
 			->set($db->quoteName('ip') . '=' . $db->Quote($ip))
 			->set($db->quoteName('referer') . '=' . $db->Quote($referer))
 			->set($db->quoteName('created_at') . '= NOW()');
+
+        /*
+        // Alternative method:
+		$query = $db->getQuery(true)
+			->insert($db->quoteName('#__affiliate_requests'))
+			->columns(
+				array(
+					$db->quoteName('affiliate_id'), 
+					$db->quoteName('url'), 
+					$db->quoteName('ip'), 
+					$db->quoteName('referer'), 
+					$db->quoteName('created_at')
+				)
+			)
+			->values(
+				implode(', ', (
+						array(
+							(int) $affiliate_id,
+							$db->quote($url),
+							$db->quote($ip),
+							$db->quote($referer),
+							$db->quote(JFactory::getDate()->toSql())
+						)
+					)
+				)
+			);
+		$db->setQuery($query);
+		$db->execute();
+        */
 	}
 }
