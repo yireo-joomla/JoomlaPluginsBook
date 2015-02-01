@@ -13,6 +13,7 @@
 	<files>
 		<filename plugin="ch06test02">ch06test02.php</filename>
 		<filename>index.html</filename>
+        <folder>sql</folder>
 	</files>
 
 	<languages>
