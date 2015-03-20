@@ -208,7 +208,7 @@ class PlgContentCh05test02 extends JPlugin
 
 		if (empty($test))
 		{
-			$data->setError('PLG_CONTENT_TEST05_ERROR_TEST_EMPTY');
+			$data->setError(JText::_('PLG_CONTENT_TEST05_ERROR_TEST_EMPTY'));
 
 			return false;
 		}
