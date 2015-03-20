@@ -68,7 +68,7 @@ class PlgContentCh03test02InstallerScript
             return true;
         }
 
-		$file = JPATH_SITE . '/plugins/content/test01/test01.php';
+		$file = JPATH_SITE . '/plugins/content/ch03test01/ch03test01.php';
 
 		if (file_exists($file) == true)
 		{
