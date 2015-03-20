@@ -21,7 +21,7 @@
 	</languages>
 
     <config>
-        <fields>
+        <fields name="params">
             <fieldset name="basic" addfieldpath="plugins/content/ch04test02/fields">
 
                 <field 
