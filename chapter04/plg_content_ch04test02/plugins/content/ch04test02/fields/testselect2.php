@@ -64,7 +64,7 @@ class JFormFieldTestselect2 extends JFormField
 
 		if (isset($this->element['multiple']))
 		{
-			$multiple = (bool) $this->element['multiple'];
+            $multiple= filter_var($this->element['multiple'], FILTER_VALIDATE_BOOLEAN); 
 		}
 
 		if (isset($this->element['size']))
